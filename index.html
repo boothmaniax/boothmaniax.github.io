@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Twitter対応 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@_sakurashiki">
+<meta name="twitter:creator" content="@_sakurashiki">
+<meta name="twitter:title" content="BOOTHマニアックス!!">
+<meta name="twitter:description" content="ピクシブが運営するサービス「BOOTH」の謎を解き明かしてみるブログ">
+<meta name="twitter:image" content="https://boothmaniax.github.io/img/boot_image.jpg">
+<!-- Facebook対応 -->
+<meta property="og:title" content="BOOTHマニアックス!!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://boothmaniax.github.io/" />
+<meta property="og:image" content="https://boothmaniax.github.io/img/boot_image.jpg" />
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/img/ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/img/ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/img/ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/img/ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/img/ico/manifest.json">
+<link rel="mask-icon" href="/img/ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/img/ico/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>BOOTHマニアックス!!</title>
+<style>
+/* 全体共通 */
+body {
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+  background-color:  rgb(250,250,250);
+  color: rgb(80,80,80);
+}
+@media screen and (min-width: 680px){
+  body {
+    padding: 0%;
+  }
+}
+@media screen and (max-width: 679px){
+  body {
+    padding: 2%;
+  }
+}
+header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+h1 {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 200%;
+}
+h1>a {
+  text-decoration: none;
+  color: inherit;
+}
+a {
+  color: gray;
+}
+img {
+  border: none;
+}
+main, footer {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+/* トップページ用コンテンツのデザイン */
+.toppage>.blog_top, .toppage>.blog_bottom {
+  font-size: 85%;
+  word-wrap: break-word;
+}
+/* エントリー専用デザイン */
+.entry>article {
+  float: left;
+  background-color: rgb(255,255,255);
+}
+.entry>nav {
+  float: right;
+}
+@media screen and (min-width: 680px){
+  .entry>article {
+    width: 60%;
+    padding: 2.5%;
+    border: 1px solid rgb(230,230,230);
+    border-radius: 20px;
+  }
+  .entry>nav {
+    width: 32%;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 679px){
+  .entry>article {
+    width: 100%;
+    padding: 0%;
+    border-color: 1px solid rgb(255,255,255);
+    border-radius: 0px;
+  }
+  .entry>nav {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.entry:after { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+h2,h3,h4,h5 {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 200%;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 680px){
+  h2 {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 679px){
+  h2 {
+    padding-top: 20px;
+  }
+}
+
+h3 {
+  border-bottom: 1px solid rgb(224,39,44);
+  border-left: 5px solid rgb(224,39,44);
+  color: inherit;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
+  letter-spacing: .1em;
+  line-height: 120%;
+}
+p {
+  line-height: 165%;
+  word-wrap: break-word;
+}
+.content>img, .content>p>img {
+  display : block;
+  width: 100%;
+}
+/* 自己紹介 */
+nav>.intro {
+  border-top: 1px dotted rgb(224,39,44);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+nav>.intro>img {
+  display: block;
+  float: right;
+  width : 100px;
+  margin-left: 10px;
+}
+nav>.intro>.myname {
+  font-size: 140%;
+  font-weigth: bold;
+  margin-bottom: 10px;
+}
+nav>.intro>.content {
+}
+/* ナビゲーション共通 */
+nav>.entries>ul,    nav>.entries>ul>li,
+nav>.entries>ul>ul, nav>.entries>ul>ul>li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.nav_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* トップページ上のナビゲーション */
+.toppage>nav>.entries>ul>li {
+  border-top: 1px dotted rgb(224,39,44);
+  font-size: 160%;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.toppage>nav>.entries>ul>ul>li {
+  font-size: 110%;
+}
+.toppage>nav>.entries>ul>ul>li>a {
+  color : inherit;
+  text-decoration: none;
+}
+.toppage>nav>.entries>ul>ul>li>a:hover {
+  color : rgba(0,0,0,0.5);
+}
+.toppage>nav>.entries>ul>ul>li {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.toppage>nav>.entries>ul>ul>li>.sumbnail,
+.toppage>nav>.entries>ul>ul>li>a>.sumbnail {
+  display: block;
+  float:left;
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 680px){
+  .toppage>nav>.entries>ul>ul>li {
+    width: 33.3%;
+  }
+  .toppage>nav>.entries>ul>ul>li>.sumbnail,
+  .toppage>nav>.entries>ul>ul>li>a>.sumbnail {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 679px){
+  .toppage>nav>.entries>ul>ul>li {
+    width: 100%;
+  }
+  .toppage>nav>.entries>ul>ul>li>.sumbnail,
+  .toppage>nav>.entries>ul>ul>li>a>.sumbnail {
+    width: 30%;
+  }
+}
+.toppage>nav>.entries>ul>ul:after { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+.toppage>nav>.entries>ul>ul>li:after { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+/* サイドバー上のナビゲーション */
+.entry>nav>.entries>ul>li {
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-top: 1px dotted rgb(224,39,44);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.entry>nav>.entries>ul>ul>li>.sumbnail,
+.entry>nav>.entries>ul>ul>li>a>.sumbnail {
+  display: block;
+  float:left;
+  width: 40%;
+  height: 80px;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+.entry>nav>.entries>ul>ul>li:after { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+.social {
+  height: 40px;
+}
+.banner_link>img {
+  width: 100%;
+}
+footer {
+  font-size: 80%;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgb(224,39,44);
+}
+footer>.labels {
+  margin-bottom: 5px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1><a href='/'>BOOTHマニアックス!!</a></h1>
+    <div class='desc'>ピクシブが運営するサービス「BOOTH」の謎を解き明かしてみるブログ</div>
+  </header>
+
+  <main class='toppage'>
+    <section class='blog_top'>このブログでは、ピクシブが運営している通販サービス「BOOTH」の使い方やTIPSを紹介しています！創作活動をしているみなさんが、ネット上でちょっとした作品を公開したいとか、グッツを作って売ってみたいとか、そういう悩みに答えられるようにしていきます。どんどんコンテンツを増やしていく予定ですので、どうぞお楽しみ下さい！</section>
+    <nav>
+      <section class='entries'>
+        <ul><li>入門編</li><ul><li><a href="whats_booth.html"><div class="sumbnail" style="background-image:url(img/boot_image.jpg);"></div><span class=".title">ピクシブが作ったBOOTHという通販サービスの魅力は何？</span></a></li></ul></ul>
+      </section>
+    </nav>
+    <section class='blog_bottom'></section>
+  </main>
+
+
+  <footer>
+    <div class='labels'><a href="https://github.com/sakurashiki/booth_maniax" target="_blank">コンテンツリポジトリ</a> - <a href="https://twitter.com/_sakurashiki" target="_blank">Twitter(@_sakurashiki)</a> - <a href="http://sakurashiki.github.io/" target="_blank">サークルページ</a></div>
+    <div class='copyright'>Copyright (C) 2015 さくらしき All Rights Reserved.</div>
+  </footer>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69852218-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>
