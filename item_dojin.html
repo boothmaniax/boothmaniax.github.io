@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang='ja'>
+<head prefix="og: http://ogp.me/ns# fb: http://ogp.me/ns/fb# article: http://ogp.me/ns/article#">
+<meta charset='utf-8' />
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<!-- Twitter対応 -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:site" content="@_sakurashiki">
+<meta name="twitter:creator" content="@_sakurashiki">
+<meta name="twitter:title" content="低い手数料で同人誌をネット販売する方法 - BOOTHマニアックス!!">
+<meta name="twitter:description" content="創作をしている人たちのネット販売のハードルを下げようと、いろいろと情報発信しています">
+<meta name="twitter:image" content="https://boothmaniax.github.io/img/.jpg">
+<!-- Facebook/Google対応 -->
+<meta property="og:title" content="低い手数料で同人誌をネット販売する方法 - BOOTHマニアックス!!" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://boothmaniax.github.io/item_dojin.html" />
+<meta property="og:image" content="https://boothmaniax.github.io/img/.jpg" />
+<meta property="og:url" content="https://boothmaniax.github.io/"/>
+<meta property="og:description" content="創作をしている人たちのネット販売のハードルを下げようと、いろいろと情報発信しています" />
+<!-- Favicon -->
+<link rel="apple-touch-icon" sizes="57x57" href="/img/ico/apple-touch-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="/img/ico/apple-touch-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="/img/ico/apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="/img/ico/apple-touch-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="/img/ico/apple-touch-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="/img/ico/apple-touch-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="/img/ico/apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="/img/ico/apple-touch-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="/img/ico/apple-touch-icon-180x180.png">
+<link rel="icon" type="image/png" href="/img/ico/favicon-32x32.png" sizes="32x32">
+<link rel="icon" type="image/png" href="/img/ico/android-chrome-192x192.png" sizes="192x192">
+<link rel="icon" type="image/png" href="/img/ico/favicon-96x96.png" sizes="96x96">
+<link rel="icon" type="image/png" href="/img/ico/favicon-16x16.png" sizes="16x16">
+<link rel="manifest" href="/img/ico/manifest.json">
+<link rel="mask-icon" href="/img/ico/safari-pinned-tab.svg" color="#5bbad5">
+<meta name="msapplication-TileColor" content="#da532c">
+<meta name="msapplication-TileImage" content="/img/ico/mstile-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<title>低い手数料で同人誌をネット販売する方法 - BOOTHマニアックス!!</title>
+<style>
+/* 全体共通 */
+body {
+  margin: 0;
+  font-family: 'Helvetica', 'Arial', 'ヒラギノ角ゴ Pro W3', 'Hiragino Kaku Gothic Pro', sans-serif;
+  background-color:  rgb(250,250,250);
+  color: rgb(80,80,80);
+}
+@media screen and (min-width: 680px){
+  body {
+    padding: 0%;
+  }
+}
+@media screen and (max-width: 679px){
+  body {
+    padding: 2%;
+  }
+}
+header {
+  text-align: center;
+  padding-bottom: 40px;
+}
+h1 {
+  margin: 0;
+  margin-top: 20px;
+  font-weight: normal;
+  font-size: 200%;
+}
+h1>a {
+  text-decoration: none;
+  color: inherit;
+}
+a {
+  color: gray;
+}
+img {
+  border: none;
+}
+main, footer {
+  width: 100%;
+  max-width: 1020px;
+  margin: 0 auto;
+}
+/* トップページ用コンテンツのデザイン */
+.toppage>.blog_top, .toppage>.blog_bottom {
+  font-size: 85%;
+  word-wrap: break-word;
+}
+/* エントリー専用デザイン */
+.entry>article {
+  float: left;
+  background-color: rgb(255,255,255);
+}
+.entry>nav {
+  float: right;
+}
+@media screen and (min-width: 680px){
+  .entry>article {
+    width: 60%;
+    padding: 2.5%;
+    border: 1px solid rgb(230,230,230);
+    border-radius: 20px;
+  }
+  .entry>nav {
+    width: 32%;
+    margin-left: 2%;
+  }
+}
+@media screen and (max-width: 679px){
+  .entry>article {
+    width: 100%;
+    padding: 0%;
+    border-color: 1px solid rgb(255,255,255);
+    border-radius: 0px;
+  }
+  .entry>nav {
+    width: 100%;
+    margin-left: 0%;
+  }
+}
+.entry:after { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+h2,h3,h4,h5 {
+  padding: 0;
+  margin: 0;
+}
+h2 {
+  font-size: 200%;
+  font-weight: normal;
+  margin-bottom: 40px;
+}
+@media screen and (min-width: 680px){
+  h2 {
+    padding-top: 0px;
+  }
+}
+@media screen and (max-width: 679px){
+  h2 {
+    padding-top: 20px;
+  }
+}
+
+h3 {
+  border-bottom: 1px solid rgb(224,39,44);
+  border-left: 5px solid rgb(224,39,44);
+  color: inherit;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-top: 20px;
+  letter-spacing: .1em;
+  line-height: 120%;
+}
+p {
+  line-height: 165%;
+  word-wrap: break-word;
+}
+.content>img, .content>p>img {
+  display : block;
+  width: 100%;
+}
+/* 自己紹介 */
+nav>.intro {
+  border-top: 1px dotted rgb(224,39,44);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+nav>.intro>img {
+  display: block;
+  float: right;
+  width : 100px;
+  margin-left: 10px;
+}
+nav>.intro>.myname {
+  font-size: 140%;
+  font-weigth: bold;
+  margin-bottom: 10px;
+}
+nav>.intro>.content {
+}
+/* ナビゲーション共通 */
+nav>.entries>ul,    nav>.entries>ul>li,
+nav>.entries>ul>ul, nav>.entries>ul>ul>li {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+nav>.entries>ul>ul>li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+nav>.entries>ul>ul>li:hover {
+  opacity: 0.85;
+}
+.nav_title {
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+/* トップページ上のナビゲーション */
+.toppage>nav>.entries>ul>li {
+  border-top: 1px dotted rgb(224,39,44);
+  font-size: 160%;
+  margin-bottom: 5px;
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.toppage>nav>.entries>ul>ul>li {
+  font-size: 110%;
+}
+.toppage>nav>.entries>ul>ul>li>a {
+  color : inherit;
+  text-decoration: none;
+}
+.toppage>nav>.entries>ul>ul>li>a:hover {
+  color : rgba(0,0,0,0.5);
+}
+.toppage>nav>.entries>ul>ul>li {
+  float: left;
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.toppage>nav>.entries>ul>ul>li>.sumbnail,
+.toppage>nav>.entries>ul>ul>li>a>.sumbnail {
+  display: block;
+  float:left;
+  height: 100px;
+  margin-left: 5px;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center center;
+}
+@media screen and (min-width: 680px){
+  .toppage>nav>.entries>ul>ul>li {
+    width: 33.3%;
+  }
+  .toppage>nav>.entries>ul>ul>li>.sumbnail,
+  .toppage>nav>.entries>ul>ul>li>a>.sumbnail {
+    width: 40%;
+  }
+}
+@media screen and (max-width: 679px){
+  .toppage>nav>.entries>ul>ul>li {
+    width: 100%;
+  }
+  .toppage>nav>.entries>ul>ul>li>.sumbnail {
+    width: 30%;
+  }
+}
+.toppage>nav>.entries>ul>ul:after { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+.toppage>nav>.entries>ul>ul>li:after  { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+/* サイドバー上のナビゲーション */
+.entry>nav>.entries>ul>li,
+.content_footer>nav>.entries>ul>li {
+  font-weight: bold;
+  margin-bottom: 5px;
+  border-top: 1px dotted rgb(224,39,44);
+  padding-top: 20px;
+  margin-top: 20px;
+}
+.entry>nav>.entries>ul>ul>li>.sumbnail,
+.entry>nav>.entries>ul>ul>li>a>.sumbnail,
+.content_footer>nav>.entries>ul>ul>li>.sumbnail,
+.content_footer>nav>.entries>ul>ul>li>a>.sumbnail {
+  display: block;
+  float:left;
+  height: 80px;
+  margin-right: 5px;
+  background-size: cover;
+  background-position: center center;
+  width: 40%;
+}
+.entry>nav>.entries>ul>ul>li:after,
+.content_footer>nav>.entries>ul>ul>li:after { /* clearfix */
+  display: block;
+  content: '';
+  clear: both;
+}
+.content_footer>nav>.entries {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+.social {
+  height: 40px;
+}
+.banner_link>img {
+  width: 100%;
+}
+footer {
+  font-size: 80%;
+  text-align: center;
+  padding-bottom: 20px;
+  padding-top: 20px;
+  margin-top: 20px;
+  border-top: 1px solid rgb(224,39,44);
+}
+footer>.labels {
+  margin-bottom: 5px;
+}
+</style>
+</head>
+<body>
+  <header>
+    <h1><a href='/'>BOOTHマニアックス!!</a></h1>
+    <div class='desc'>創作をしている人たちのネット販売のハードルを下げようと、いろいろと情報発信しています</div>
+  </header>
+
+
+  <main class='entry'>
+    <article>
+      <section class='content_header'>
+        <h2>低い手数料で同人誌をネット販売する方法</h2>
+      </section>
+      <section class='content'>
+        <p>同人イベントとかで販売した同人誌を、ネット上で販売したいという人のために、ネット通販サービス「<a href='https://booth.pm/start?utm_source=blog&utm_medium=banner&utm_campaign=boothmaniax'>BOOTH</a>」を使ってさくっとネットショップを開いて頒布する方法を紹介します。</p>
+<h3>同人誌販売の基本</h3>
+<p>同人誌をネット上で販売したいとなると、気をつけなくてはいけないのが、サービス側が受け取るマージンである「販売手数料」と、作品の発送を行う際に宅配会社に支払う「送料」、お金の支払をするときに銀行やカード会社に払う「決済手数料」です。BOOTHは、通常1〜4割ぐらいとられる販売手数料が、なんとまぁ0円なので、ここは一切考える必要がありません。作品を売る側が考えるのは「送料」と「決済手数料」です。</p>
+<h4>送料</h4>
+<p>「<strong>送料</strong>」の一般的な相場は400〜700円ぐらいなのですが、同人誌の場合は、どんな手段で発送するにしてもだいたい165円ぐらいなんだ！と考えるとよいでしょう。なぜなら、サイズや重量の関係で、発送方法は必然的に「<strong>クリックポスト</strong>」か「<strong>メール便</strong>」を選ばざる得なくなるからです。</p>
+<p>「<strong>クリックポスト</strong>」は、販売者から購入者へ直接商品を発送するという取り引きの方法「<strong>自家通販</strong>」を行う人たちに向いている発送サービスです。個人間で同人誌を送る分には164円ということで、事実上は最安だったりします。ネット上で発送先を指定し、切手不要で近所のポストへ投函することで購入者へ発送できるため、慣れれば便利です。</p>
+<p>「<strong>メール便</strong>」は、様々な通販サービスで広く使われている発送方法です。企業が書類とか商品カタログとか、イベントのPR冊子なんかを送るための用途として使われいるものです。同人誌だとサイズも調度良く、しかも相場がだいたい165円と安価であるため、通販サービスに発送を委託するケースにはよく使われます。</p>
+<p>自家通販は、商品のパッキングや発送が辛いとか、自分の住所を漏らしたくないとか、様々な問題があります。そういういろんな面倒事を引き受けてくれるものとして、BOOTHは「<a href='https://booth.pm/warehouse_guide?utm_source=blog&utm_medium=banner&utm_campaign=boothmaniax'>倉庫サービス</a>」を提供しています。同人誌をBOOTHの倉庫サービスを使って販売する場合、よほど分厚くないか、あるいは特殊な形をしていない限り、必然的にメール便を採用することになるでしょう。</p>
+<h4>決済手数料</h4>
+<p>「<strong>決済手数料</strong>」については、購入者が振り込んだ金額に対して、BOOTHは3.6%＋10円を請求します。購入者が振り込んだ金額なので、この中には商品の代金に加えて、送料(165円)も含まれます。つまり「(商品の代金＋165円)×3.6％＋10円」を引いたものが、あなたの受け取り分となります。</p>
+<p>例えば500円の同人誌をBOOTHで販売するとどういう感じになるかというと・・・</p>
+<p><img style='border:1px solid silver;' alt='500円の同人誌を売った場合' src='img/151113_0001.jpg'></p>
+<p>こんなかんじで、466円があなたの元に支払われるわけです。これが、100円の雑誌やサンプルだと、売上は80円ですね。</p>
+<p><img style='border:1px solid silver;' alt='100円の同人誌を売った場合' src='img/151113_0002.jpg'></p>
+<p>そしてそれは、倉庫へ発送などを委託するために作品を送るための送料が別途必要になります。また、同人誌であれば、印刷費もバカにはなりませんね。そういうのを売上から捻出できるよううまく調整するといいでしょう。</p>
+<p>まぁ、同人誌なんてほとんどの人は趣味でみてもらおうと思っているものなので、そこまで意識するものでもないかもしれませんが。</p>
+<h3>ショップを開設して、作品の商品ページを作る</h3>
+<p>BOOTHは創作物を展示して販売したいという人のための場。創作活動をする人のためのネットショップサービスです。ショップを作って、販売のための手続きをして、作品を商品として登録する、という感じで作っていきます。</p>
+<p>ショップの開設は簡単です。ショップの「サブドメイン名」と「ショップ名」だけを考えておけばOKです。</p>
+<p>BOOTHにログインして、「<a href='https://booth.pm/shop/new'>BOOTHを作成する</a>」へ進みサブドメイン情報を入力し、「<a href='https://manage.booth.pm/design/edit'>BOOTHデザイン</a>」からBOOTH名を入力すればショップの作成は完了します。あとは、「<a href='https://manage.booth.pm/settings'>BOOTH情報編集ページ</a>」で公開に設定するとショップはネット上に公開されます。</p>
+<p><img style='border:1px solid silver;' alt='ショップの開設' src='img/151110_0001.gif'></p>
+<p>ネット上で売買をするための手続きも簡単で、2箇所だけを気にすればようでしょう。</p>
+<p>ひとつは口座情報です。こちらは、「<a href='https://manage.booth.pm/seller_info/edit'>オーナー情報ページ</a>」から入力を行います。もうひとつは法律の問題で、「<a href='https://manage.booth.pm/terms/edit'>特定商取引法に基づく表記</a>」にて内容を確認し、必要に応じて修正しなくてはいけません。ただ、こちらは大抵の場合、既に用意されているものをそのまま使っているようです。</p>
+<p><img style='border:1px solid silver;' alt='必要な作業' src='img/151113_0003.jpg'></p>
+<p>次に、あなたの作品を商品として登録しましょう。商品ページを作ります。</p>
+<p>先ほどのショップが完成している場合、右上に「<strong>BOOTHの管理</strong>」というボタンがでます。そこから、「<strong>商品の登録/編集</strong>」を選び、「<strong>商品登録</strong>」へ進みます。そこで、作品の名前を入力しましょう。</p>
+<img style='border:1px solid silver;' alt='必要な作業' src='img/151113_0004.jpg'>
+↓
+<img style='border:1px solid silver;' alt='必要な作業' src='img/151113_0005.jpg'>
+↓
+<p><img style='border:1px solid silver;' alt='必要な作業' src='img/151113_0006.jpg'></p>
+<p>すると、商品を編集するページにたどりつきます。さて、作品の販売を行うべく、情報を入力していきましょう！！</p>
+<p><img style='border:1px solid silver;' alt='必要な作業' src='img/151113_0007.jpg'></p>
+<p>もっと詳細な説明は、<a href='minutes_to_start.html'>こちらのページ</a>でやっていますので、不安なひとはそちらもご覧頂ければ！</p>
+
+<h3>同人誌を商品として登録する</h3>
+<p>同人誌を商品として登録してみましょう。</p>
+
+      </section>
+      <section class='content_footer'>
+        <nav>
+          <div class='entries'>
+            
+          </div>
+        </nav>
+        <div class='social'>
+          <a href="http://b.hatena.ne.jp/entry/https://boothmaniax.github.io/item_dojin.html" class="hatena-bookmark-button" data-hatena-bookmark-title="低い手数料で同人誌をネット販売する方法" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
+          <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
+          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+          <div class="fb-like" data-href="https://boothmaniax.github.io/item_dojin.html" data-layout="button_count" data-action="like" data-show-faces="true" data-share="false"></div>
+          <div id="fb-root"></div>
+          <script>(function(d, s, id) {
+            var js, fjs = d.getElementsByTagName(s)[0];
+            if (d.getElementById(id)) return;
+            js = d.createElement(s); js.id = id;
+            js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.5&appId=197161527125727";
+            fjs.parentNode.insertBefore(js, fjs);
+          }(document, 'script', 'facebook-jssdk'));</script>
+        </div>
+        <div class='banner'>
+          <a class='banner_link' href='https://booth.pm/start?utm_source=blog&utm_medium=banner&utm_campaign=boothmaniax
+' target='_blank'><img src='img/banner.jpg'></a>
+        </div>
+      </section>
+    </article>
+    <nav>
+      <section class='entries'>
+        <ul><li>BOOTH入門編</li><ul><li><a href="before_store_open.html"><div class="sumbnail" style="background-image:url(img/151109_0008.jpg);"></div><span class=".title">作品をネット通販する前に知るべき3つのポイント</span></a></li><li><a href="minutes_to_start.html"><div class="sumbnail" style="background-image:url(img/151110_0011.jpg);"></div><span class=".title">3分でさくっとショップを開設し、作品のネット販売を始める</span></a></li><li><a href="whats_booth.html"><div class="sumbnail" style="background-image:url(img/boot_image.jpg);"></div><span class=".title">BOOTHという創作向け通販サービスのメリット・デメリット</span></a></li></ul><li>作品の販売のやり方編TIPS</li><ul><li><div class="sumbnail" style="background-image:url(img/.jpg);"></div><span class=".title">同人誌を販売する方法</span></li></ul></ul>
+      </section>
+      <section class='intro'>
+        <div class='nav_title'>このブログのライター</div>
+        <img src=img/self.png alt="著者近影">
+        <div class="myname">さくらしき</div>
+        <div class="comment">創作活動とかをやりつつも、BOOTHの使い方とか研究して紹介している趣味ブログです。誤字脱字、内容に誤りがあれば、ぜひぜひ<a href="https://twitter.com/_sakurashiki" target='_blank'>Twitter</a>までご連絡下さい！<a href='https://github.com/sakurashiki/booth_maniax' target='_blank'>プルリクエスト</a>でも受け付けてます！！</div>
+      </section>
+    </nav>
+  </main>
+
+  <footer>
+    <div class='labels'>
+      <a href='https://github.com/sakurashiki/booth_maniax' target='_blank'>コンテンツリポジトリ</a> -
+      <a href='https://twitter.com/_sakurashiki' target='_blank'>Twitter(@_sakurashiki)</a> -
+      <a href='http://sakurashiki.github.io/' target='_blank'>サークルページ</a>
+    </div>
+    <div class='copyright'>Copyright (C) 2015 さくらしき All Rights Reserved.</div>
+  </footer>
+  <script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-69852218-1', 'auto');
+  ga('send', 'pageview');
+</script>
+</body>
+</html>

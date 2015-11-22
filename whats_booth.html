@@ -187,6 +187,13 @@ nav>.entries>ul>ul, nav>.entries>ul>ul>li {
   padding: 0;
   margin: 0;
 }
+nav>.entries>ul>ul>li {
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
+nav>.entries>ul>ul>li:hover {
+  opacity: 0.85;
+}
 .nav_title {
   font-weight: bold;
   margin-bottom: 10px;
@@ -237,8 +244,7 @@ nav>.entries>ul>ul, nav>.entries>ul>ul>li {
   .toppage>nav>.entries>ul>ul>li {
     width: 100%;
   }
-  .toppage>nav>.entries>ul>ul>li>.sumbnail,
-  .toppage>nav>.entries>ul>ul>li>a>.sumbnail {
+  .toppage>nav>.entries>ul>ul>li>.sumbnail {
     width: 30%;
   }
 }
@@ -247,13 +253,14 @@ nav>.entries>ul>ul, nav>.entries>ul>ul>li {
   content: '';
   clear: both;
 }
-.toppage>nav>.entries>ul>ul>li:after { /* clearfix */
+.toppage>nav>.entries>ul>ul>li:after  { /* clearfix */
   display: block;
   content: '';
   clear: both;
 }
 /* サイドバー上のナビゲーション */
-.entry>nav>.entries>ul>li {
+.entry>nav>.entries>ul>li,
+.content_footer>nav>.entries>ul>li {
   font-weight: bold;
   margin-bottom: 5px;
   border-top: 1px dotted rgb(224,39,44);
@@ -261,19 +268,26 @@ nav>.entries>ul>ul, nav>.entries>ul>ul>li {
   margin-top: 20px;
 }
 .entry>nav>.entries>ul>ul>li>.sumbnail,
-.entry>nav>.entries>ul>ul>li>a>.sumbnail {
+.entry>nav>.entries>ul>ul>li>a>.sumbnail,
+.content_footer>nav>.entries>ul>ul>li>.sumbnail,
+.content_footer>nav>.entries>ul>ul>li>a>.sumbnail {
   display: block;
   float:left;
-  width: 40%;
   height: 80px;
   margin-right: 5px;
   background-size: cover;
   background-position: center center;
+  width: 40%;
 }
-.entry>nav>.entries>ul>ul>li:after { /* clearfix */
+.entry>nav>.entries>ul>ul>li:after,
+.content_footer>nav>.entries>ul>ul>li:after { /* clearfix */
   display: block;
   content: '';
   clear: both;
+}
+.content_footer>nav>.entries {
+  margin-top: 15px;
+  margin-bottom: 15px;
 }
 .social {
   height: 40px;
@@ -349,6 +363,11 @@ footer>.labels {
 
       </section>
       <section class='content_footer'>
+        <nav>
+          <div class='entries'>
+            <ul><li>こんな記事もオススメ!!</li><ul><li><a href="before_store_open.html"><div class="sumbnail" style="background-image:url(img/151109_0008.jpg);"></div><span class=".title">同人作家やアーティストが、作品をネット通販する前に知るべき3つのポイント</span></a></li><li><a href="minutes_to_start.html"><div class="sumbnail" style="background-image:url(img/151110_0011.jpg);"></div><span class=".title">3分で個人のネットショップを開いて、同人グッツの販売を始めてみた</span></a></li></ul>
+          </div>
+        </nav>
         <div class='social'>
           <a href="http://b.hatena.ne.jp/entry/https://boothmaniax.github.io/whats_booth.html" class="hatena-bookmark-button" data-hatena-bookmark-title="創作活動向けネットショップサービス「BOOTH」は何が良くて何がダメなのか？" data-hatena-bookmark-layout="simple-balloon" title="このエントリーをはてなブックマークに追加"><img src="https://b.st-hatena.com/images/entry-button/button-only@2x.png" alt="このエントリーをはてなブックマークに追加" width="20" height="20" style="border: none;" /></a><script type="text/javascript" src="https://b.st-hatena.com/js/bookmark_button.js" charset="utf-8" async="async"></script>
           <a href="https://twitter.com/share" class="twitter-share-button" data-count="none">Tweet</a>
@@ -371,7 +390,7 @@ footer>.labels {
     </article>
     <nav>
       <section class='entries'>
-        <ul><li>BOOTH入門編</li><ul><li><a href="before_store_open.html"><div class="sumbnail" style="background-image:url(img/151109_0008.jpg);"></div><span class=".title">作品をネット通販する前に知るべき3つのポイント</span></a></li><li><a href="minutes_to_start.html"><div class="sumbnail" style="background-image:url(img/151110_0011.jpg);"></div><span class=".title">3分でさくっとショップを開設し、作品のネット販売を始める</span></a></li><li><div class="sumbnail" style="background-image:url(img/boot_image.jpg);"></div><span class=".title">BOOTHという創作向け通販サービスのメリット・デメリット</span></li></ul></ul>
+        <ul><li>BOOTH入門編</li><ul><li><a href="before_store_open.html"><div class="sumbnail" style="background-image:url(img/151109_0008.jpg);"></div><span class=".title">作品をネット通販する前に知るべき3つのポイント</span></a></li><li><a href="minutes_to_start.html"><div class="sumbnail" style="background-image:url(img/151110_0011.jpg);"></div><span class=".title">3分でさくっとショップを開設し、作品のネット販売を始める</span></a></li><li><div class="sumbnail" style="background-image:url(img/boot_image.jpg);"></div><span class=".title">BOOTHという創作向け通販サービスのメリット・デメリット</span></li></ul><li>作品の販売のやり方編TIPS</li><ul><li><a href="item_music.html"><div class="sumbnail" style="background-image:url(img/151116_0001.jpg);"></div><span class=".title">音楽をダウンロード配信する方法</span></a></li></ul></ul>
       </section>
       <section class='intro'>
         <div class='nav_title'>このブログのライター</div>
